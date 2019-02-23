@@ -1,130 +1,277 @@
 {
-  "title": "Get A Life",
+  "title": "Pregmancy",
   "id": 4,
   "version": "1.0",
   "author": "Callum Gare",
   "authorLink": "https://github.com/callumgare/",
-  "description": "Just letting you know, this is a demo of <a href='https://github.com/callumgare/choice-assist/'>Choice Assist</a>. Which is intended for making interactive versions of <a href='https://www.reddit.com/r/makeyourchoice/'>these</a>, a kind of cross between a choose your own adventure novel and a deckbuilding game. So you probably wont find this particular example to be terribly exciting.",
-  "img": "hot_air_balloon.jpg",
-  "imgSource": "https://www.pexels.com/photo/red-and-blue-hot-air-balloon-floating-on-air-on-body-of-water-during-night-time-36487/",
+  "description": "Hiya friend! I'm the pregofairy, and I've heard your desires for a new life! If you choose, I can craft a new Iife and a new body for you using the magic art of Preqmancy! I'll also teach you some Pregmancy of your own, so you can be a Preqmancer yourself! How cool is that! If you want to go through with this, I'll give you some coins you can use to set up your new life! If you want to pass, | guess that’s fine too. I'll Just take my super unique and awesome opportunity elsewhere... Sniff sniff.\n<strong>Normal Mode:</strong> 10 Coins, take as many boons and drawbacks as you like.\n<strong>Random Mode:</strong> Roll for everything. Roll for your Babymaker until you have at least 1 option. For every boon you take, also take a drawback!\n<strong>Hell Mode:</strong> Roll for everything, roll for 2 Babymakers, 4 boons and 7 drawbacks.",
+  "img": "cover.jpg",
+  "imgSource": "",
   "budget": 10,
   "contains": [
     {
-      "title": "Home",
-      "id": 11,
-      "description": "Where do you call home?",
+      "title": "Body",
+      "id": 0,
+      "description": "You agreed! Yaaay! Okay, so you've agreed, so here's the caveat. To practice Preqmancy, you've gotta be able to get pregnant yourself. There are some things you can do for other people, but in order to channel the pregenergy, you have to have a fertile womb, got it? That doesn’t mean you have to be a girl, If you're worried about that, we'll just have to, ahem, reconfigure your body a little bit.",
+      "maxSelectable": 1,
+      "minSelectable": 1,
       "contains": [
         {
-          "title": "City",
-          "id": 5,
-          "description": "The place where things happen, career opportunities, Nightlife, the weird and the wonderful. It an also be a place of great isolation. Sometimes you might find yourself alone in a crowd of people.",
-          "img": "city.jpg",
-          "imgSource": "https://www.pexels.com/photo/architecture-buildings-business-city-374870/",
-          "maxSelectable": 1,
-          "cost": 5
-        },
-        {
-          "title": "Suburbs",
-          "id": 6,
-          "description": "The burbs; Backyards, plenty of room to bike around, bit calmer than the city but less disconnected than anywhere more rural. Where the suburb anthem of lawn mowers and whipper snippers plays every Saturday morning.\n<br><br>\nYou can pick up to 3 of this one.",
-          "img": "suburbs.jpg",
-          "imgSource": "https://www.pexels.com/photo/apartment-architecture-buildings-cars-243722/",
-          "maxSelectable": 3,
-          "cost": 3
-        },
-        {
-          "title": "Countryside",
+          "title": "Feminine",
           "id": 7,
-          "description": "Space for days. Life here tends to be pretty quite and straight forward. You might be out of luck though if you're not interested in farming or running a general store.\n<br><br>\nYou can pick unlimited amounts of this one.",
-          "img": "farm.jpg",
-          "imgSource": "https://www.pexels.com/photo/houses-in-farm-against-cloudy-sky-248880/",
-          "cost": 2
+          "description": "The default, and with good reason! Most mothers, and practitioners of Preqmancy, are feminine in appearance. It's just natural for us to take on a mothering role.",
+          "img": "body_feminine.jpg",
+          "maxSelectable": 1,
+          "cost": 1
         },
         {
-          "title": "Island",
-          "id": 10,
-          "description": "If you appreciate getting away from it all then this might be your dream local. Just don't expect too many modern conveniences",
-          "img": "island.jpg",
-          "imgSource": "https://www.pexels.com/photo/island-covered-with-green-trees-under-the-clear-skies-188029/",
+          "title": "Androgynous",
+          "id": 5,
+          "description": "A nice middle ground. With the right clothes and makeup you could pass for male or female.",
+          "img": "body_androgynous.jpg",
           "maxSelectable": 1,
-          "cost": 3
+          "cost": 1
+        },
+        {
+          "title": "Masculine",
+          "id": 3,
+          "description": "Really? You wanna be a guy AND learn Pregmancy? Hey, not gonna stop you, more power to ya friend.",
+          "img": "body_masculine.jpg",
+          "maxSelectable": 1,
+          "cost": 1
         }
       ]
     },
     {
-      "title": "Spending Time",
-      "id": 12,
+      "title": "Breasts",
+      "id": 8,
+      "description": "Every good momma has to Nave a nice rack. Trust me on this, I'm a professional.",
+      "maxSelectable": 1,
+      "minSelectable": 1,
       "contains": [
         {
-          "title": "Job",
-          "id": 13,
-          "description": "Your main and presumably paid occupation.",
-          "maxSelectable": 2,
-          "contains": [
-            {
-              "title": "Mechanic",
-              "id": 8,
-              "description": "The wear of an engine after you've giving it a good going over brings you a supreme joy. Average pay.",
-              "img": "mechanic.jpg",
-              "imgSource": "https://www.pexels.com/photo/architecture-buildings-business-city-374870/",
-              "maxSelectable": 1,
-              "cost": 5
-            },
-            {
-              "title": "Engineer",
-              "id": 0,
-              "description": "You've loved making things ever since you were knee-high to a grasshopper. You still get to do some of that among the more boring parts of your job. But you get paid pretty good money so that always helps.",
-              "img": "engineer.jpg",
-              "imgSource": "https://www.pexels.com/photo/people-laptop-industry-internet-132700/",
-              "maxSelectable": 1,
-              "cost": 5
-            },
-            {
-              "title": "Entertainer",
-              "id": 1,
-              "description": "Maybe you make movies or produce music. But whatever it is you've fought hard to make your passion a viable career. The pay's not great but it's enough and you spend your days doing what you love.",
-              "img": "entertainment.jpg",
-              "imgSource": "https://www.pexels.com/photo/audio-business-computer-connection-265672/",
-              "maxSelectable": 1,
-              "cost": 5
-            }
-          ]
+          "title": "Flat",
+          "id": 9,
+          "description": "A simple flat chest. Good if you're going for a male bodytype, but baad for just about everything else if you ask me!",
+          "img": "breasts_flat.jpg",
+          "maxSelectable": 1,
+          "cost": 1
         },
         {
-          "title": "Hobby",
-          "id": 14,
-          "description": "What do you do in your down time?",
+          "title": "Small",
+          "id": 10,
+          "description": "Who says small chests are bad? I'll fight ‘em! Small means they're nice and sensitive, and anything more than a handful is a waste anyway. No, I'm not biased.",
+          "img": "breasts_small.jpg",
           "maxSelectable": 1,
-          "minSelectable": 1,
-          "contains": [
-            {
-              "title": "Photography",
-              "id": 2,
-              "description": "You enjoy nothing more than the satisfaction of capturing a slice of the world in an image.",
-              "img": "photography.jpg",
-              "imgSource": "https://www.pexels.com/photo/camera-canon-digital-dslr-459735/",
-              "maxSelectable": 1,
-              "cost": -5
-            },
-            {
-              "title": "Painting",
-              "id": 3,
-              "description": "When you paint you enter a semi-meditative state, the whole world seems lighter.",
-              "img": "painting.jpg",
-              "imgSource": "https://www.pexels.com/photo/brush-painting-color-paint-102127/",
-              "maxSelectable": 1,
-              "cost": 0
-            },
-            {
-              "title": "Dance",
-              "id": 9,
-              "description": "You've never been able to keep still and dance allows you to channel that energy.",
-              "img": "dance.jpg",
-              "imgSource": "https://www.pexels.com/photo/dancing-dance-people-hip-hop-12312/",
-              "maxSelectable": 1,
-              "cost": 5
-            }
-          ]
+          "cost": 1
+        },
+        {
+          "title": "Medium",
+          "id": 1,
+          "description": "A decent size, the majority of people fail slightly below or above this size, believe it or not you won't be suffering any back problems with these either.",
+          "img": "breasts_medium.jpg",
+          "maxSelectable": 1,
+          "cost": 1
+        },
+        {
+          "title": "Large",
+          "id": 2,
+          "description": "Now this is getting big! These puppies are almost as big as I am! Breasts this size are made to be sucked on. I really hope you pick up lactation!",
+          "img": "breasts_large.jpg",
+          "maxSelectable": 1,
+          "cost": 1
+        },
+        {
+          "title": "Huge",
+          "id": 6,
+          "description": "Okay, these ones ARE bigger than I am! Harumph! I guess they're not bad. Nice and supple and so enticing to suck on. You'll definitely have some back issues in the future though.",
+          "img": "breasts_huge.jpg",
+          "maxSelectable": 1,
+          "cost": 1
+        }
+      ]
+    },
+    {
+      "title": "Butt, Hips & Thighs",
+      "id": 11,
+      "maxSelectable": 1,
+      "minSelectable": 1,
+      "contains": [
+        {
+          "title": "Flat",
+          "id": 12,
+          "description": "I‘m not mad, I'm just disappointed. You're bonier then Skeletor! No, no, | shouldn't body shame. I'm sorry. But you <strong>are</strong> going to have some problems giving birth with those hips.",
+          "img": "butt_flat.jpg",
+          "maxSelectable": 1,
+          "cost": 1
+        },
+        {
+          "title": "Cute",
+          "id": 13,
+          "description": "Okay, now this isn't bad at all! A nice butt, decent hips, and excellent thighs, the full package. You could do worse.",
+          "img": "butt_cute.jpg",
+          "maxSelectable": 1,
+          "cost": 1
+        },
+        {
+          "title": "Thick",
+          "id": 15,
+          "description": "Okay, now you're getting somewhere. Wide hips, a nice round bubble butt and the sweetest of thighs. I could get sandwiched in between here for days, but I won't, because I have shit to do.",
+          "img": "butt_thick.jpg",
+          "maxSelectable": 1,
+          "cost": 1
+        },
+        {
+          "title": "Thicc",
+          "id": 16,
+          "description": "Yeah, that’s right, I spelled it with two c's. Sue me. Thicc is the only way to describe this. No matter where you go, people will say, “Damn she thicc tho.”",
+          "img": "butt_thicc.jpg",
+          "maxSelectable": 1,
+          "cost": 1
+        },
+        {
+          "title": "Motherly",
+          "id": 14,
+          "description": "The absolute top of the spectrum. The widest child-bearingest hips we've got, a massive ass, and the thickest of thighs make you an absolute goddess from the waist down.",
+          "img": "butt_motherly.jpg",
+          "maxSelectable": 1,
+          "cost": 1
+        }
+      ]
+    },
+    {
+      "title": "Babymaker",
+      "id": 17,
+      "description": "Good, great, fantastic, wonderful! Now that that’s done, let's get down to the real meat of Preqmancy. Baby makin’. Let's face It, you're probably going to get knocked up at some point, that’s the whole point of learning Preqmancy! But how, is the question. Select as many options as you'd like, but you must leave this section with at least one womb!",
+      "contains": [
+        {
+          "title": "Anal Womb",
+          "id": 18,
+          "description": "You've got a womb situated in your ass! Any anal sex could potentially get you pregnant. This is the standard option for guys who don't want an icky vagina, or anyone into MPreg.",
+          "img": "babymaker_anal-womb.jpg",
+          "maxSelectable": 1,
+          "cost": 1
+        },
+        {
+          "title": "Normal Womb",
+          "id": 20,
+          "description": "You've got a good old fashioned Vagina and womb. It's the standard, but for good reason! You can actually take this babymaker multiple times.\nEach time gives you a separate, fertile womb, each of which can be pregnant (or not) with different children!",
+          "img": "babymaker_normal-womb.jpg",
+          "maxSelectable": 1,
+          "cost": 1
+        },
+        {
+          "title": "Odd Pregnancy",
+          "id": 21,
+          "description": "<strong>Requires at least one womb.</strong> Any of your fuckable orifices lead directly to your womb. You can get pregnant rom a blowjob, or from <strong>Fuckable Nippies</strong>. Thankfully, you don't give birth through those orifices, ‘cause that'd be weird... especially with <strong>Total Mindfuck</strong>.",
+          "img": "babymaker_odd-pregnancy.jpg",
+          "maxSelectable": 1,
+          "cost": 1
+        },
+        {
+          "title": "Swingin' Dick",
+          "id": 19,
+          "description": "Okay, so this isn't a womb, you can't get pregnant with it, but you <strong>can</strong> get others pregnant with it, so it’s still a babymaker! You've got a dick, and optionally balls. | had to make them optional, some people just get real finicky about balls. Remember, you can't utilize your Preqmancy when you're knocking someone else up.",
+          "img": "babymaker_swingin-dick.jpg",
+          "maxSelectable": 1,
+          "cost": 1
+        }
+      ]
+    },
+    {
+      "title": "Pregnancy Types",
+      "id": 22,
+      "description": "<strong>Mwah.</strong> Perfect! Don't be distracted by my growing belly, I'm just generating the spell needed to transform you. That’s my brand of Pregmancy, and now it’s time to figure out what you can generate with your pregnancies! Whenever you get pregnant, you must select one type of pregnancy from among the ones you've unlocked.",
+      "contains": [
+        {
+          "title": "Babies",
+          "id": 24,
+          "description": "<strong>You receive this for free.</strong> Yep, with all the other things you can do here, maybe you forgot that the primary purpose of getting pregnant is to have babies!",
+          "img": "pregnancy-type_babies.jpg",
+          "maxSelectable": 1,
+          "cost": 1
+        },
+        {
+          "title": "Beasts",
+          "id": 26,
+          "description": "You give birth to beasts, both in a mundane sense and a mythological sense. Did you know the mighty Minotaur was the product of a moral woman breeding with a cow? That's something you can do now. Will these monsters tater run amok and nave to be defeated by Magical Girls? Who knows! You don't technically need to fuck animals to do this, ‘cause that might be weird, but the option is there.",
+          "img": "pregnancy-type_breasts.jpg",
+          "maxSelectable": 1,
+          "cost": 1
+        },
+        {
+          "title": "Faries",
+          "id": 25,
+          "description": "You now give birth to clouds of fairies! Yay! Every child you would normally conceive is instead about 10 new fairies you'll unleash onto the world. Most of them are good, but I admit, there are a few bad eggs amongst us. We totally respect our mothers, though, so they might only prank you a little.",
+          "img": "pregnancy-type_fairies.jpg",
+          "maxSelectable": 1,
+          "cost": 1
+        },
+        {
+          "title": "Happiness",
+          "id": 23,
+          "description": "Whenever you give birth, everyone within about a 5 mile radius feels a rush of happiness. Any self-doubt they have is washed away, as well as any anxiety, or depression. This effect will last about 9 months, just in time for your next happiness baby! For every additional “child\", the radius is increased by 5 miles. There is no actual, physical child, so birthing is incredibly easy!",
+          "img": "pregnancy-type_happiness.jpg",
+          "maxSelectable": 1,
+          "cost": 1
+        },
+        {
+          "title": "Money",
+          "id": 30,
+          "description": "You've heard of the goose that laid the golden egg? Yep, that’s you now sweetie! Instead of birthing a child, you'll produce a solid gold egg worth about $50,000 American. It's not a massive haul, factoring in the 9 months that go into it, but it's more than most people see!",
+          "img": "pregnancy-type_money.jpg",
+          "maxSelectable": 1,
+          "cost": 1
+        },
+        {
+          "title": "Parasites",
+          "id": 33,
+          "description": "You birth a breed of parasites that will immediately seek out the closest un-infested vaginas and worm their way Inside (an intensely pleasurable experience, trust me). Anyone with a Parasite in them incredibly receptive to your words. Not to the point of mind control, but they'll consider you good friends and take any advice you give them to heart.",
+          "img": "pregnancy-type_parasites.jpg",
+          "maxSelectable": 1,
+          "cost": 1
+        },
+        {
+          "title": "Time",
+          "id": 32,
+          "description": "You gestate time itself. When you | give birth, you can choose to regress the age of anyone in the vicinity by 1 year. Assuming you produce 1 time baby every 9 months, this is a net gain! And it gets even better with twins, triplets, or Taster pregnancies. For each additional “child” you have, you can increase the regression time accordingly, or spread it around to another person. There is no actual, physical child, so birthing is incredibly easy!",
+          "img": "pregnancy-type_time.jpg",
+          "maxSelectable": 1,
+          "cost": 1
+        },
+        {
+          "title": "Transformations",
+          "id": 29,
+          "description": "Hey, this is sort of like what have! | With this, you'll be able to gestate spells that can transform yourself, or anyone around you in a very specific way. You have to specify the transformation when you're impregnated, and it can't completely change a person from the ground up (I'm king of unique in that way!), but you can alter their height, weight, the size or even shape of their dick, just about anything under the sun! There is no actual, physical child, so birthing is incredibly easy!",
+          "img": "pregnancy-type_transformations.jpg",
+          "maxSelectable": 1,
+          "cost": 1
+        }
+      ]
+    },
+    {
+      "title": "New Group",
+      "id": 27,
+      "contains": [
+        {
+          "title": "New Choice",
+          "id": 35,
+          "maxSelectable": 1
+        },
+        {
+          "title": "New Choice",
+          "id": 36,
+          "maxSelectable": 1
+        },
+        {
+          "title": "New Choice",
+          "id": 34,
+          "maxSelectable": 1
+        },
+        {
+          "title": "New Choice",
+          "id": 31,
+          "maxSelectable": 1
         }
       ]
     }
