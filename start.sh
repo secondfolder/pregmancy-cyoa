@@ -10,6 +10,7 @@ if [ "$NODE_ENV" = "production" ]; then
   fi;
   if [ "$inGlitch" = "true" ]; then
     exec http-server dist --gzip --proxy http://localhost:${PORT}?
+    
   fi;
 else
   rimraf dist
