@@ -1,10 +1,10 @@
-<template lang="html">
+<template>
   <div class="choice">
-    <input 
-      class="title" 
+    <input
+      class="title"
       v-model="choiceData.title"
     >
-    <input 
+    <input
       class="imageFilename"
       placeholder="Image Filename"
       v-model="choiceData.img"
@@ -16,13 +16,13 @@
       Image could not be found. Make sure an image with the same file name exists in the assets folder.
     </span>
     <label>URL of Image Source</label>
-    <input 
-      class="imgSource" 
+    <input
+      class="imgSource"
       v-model="choiceData.imgSource"
     >
     <label>Price</label>
-    <input 
-      class="price" 
+    <input
+      class="price"
       v-model.number="choiceData.cost"
       type="number"
     >
@@ -34,14 +34,14 @@
     </select>
     <template v-if="selectability === 'limited'">
       <span>Maximum Selectable</span>
-      <input  
+      <input
         v-model.number="maxSelectable"
         type="number"
         min="2"
       >
     </template>
-    <textarea 
-      class="description" 
+    <textarea
+      class="description"
       v-model="choiceData.description"
       placeholder="Description"
     ></textarea>
@@ -50,7 +50,7 @@
 
 <script lang="js">
   import deckMixin from '../mixins/deck'
-  
+
   export default {
     name: 'edit-deck-card-choice',
     mixins: [deckMixin],
@@ -141,7 +141,7 @@
     margin: 1em;
     font-style: italic;
   }
-  
+
   /* Custom CSS */
   /* ... */
 </style>

@@ -1,16 +1,12 @@
-var glitchAssets
-try {
-  if (process.env.ISGLITCH) {
-    glitchAssets = require('raw-loader!@/../.glitch-assets') // eslint-disable-line import/no-webpack-loader-syntax
-    glitchAssets = glitchAssets.split('\n').map(asset => {
-      try {
-        return JSON.parse(asset)
-      } catch (e) {
-      }
-    }).filter(asset => asset)
+import glitchAssetsRaw from '@/../.glitch-assets?raw'
+
+const glitchAssets = glitchAssetsRaw.split('\n').map(asset => {
+  try {
+    return JSON.parse(asset)
+  } catch (e) {
   }
-} catch (e) {
-}
+}).filter(asset => asset)
+
 export default {
   methods: {
     setSelection (choice, qty) {
