@@ -98,7 +98,7 @@
     flex: 0 1 auto;
   }
   li.choice {
-    flex: 0 1 20em;
+    flex: 0 1 auto;
   }
 
   @media (max-width: 25em) {

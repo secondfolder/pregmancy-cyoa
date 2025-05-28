@@ -3,13 +3,13 @@
 }
 
 button {
-  background-color: #99d8ff;
+  background-color: #ffecb8;
   color: #2c3e4f;
   font-weight: bold;
   font-size: 1.2em;
   border: 0;
-  padding-bottom: 0.2em;
-  padding-top: 0.2em;
+  border-radius: 1rem;
+  padding: 0.4em 1.2em;
 }
 button:focus {
   outline: none;

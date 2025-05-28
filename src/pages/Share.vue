@@ -9,7 +9,7 @@
           These choices were made in random or hard mode.
         </div>
         <div v-else class="share-summary">
-          The choices have been made.
+          These choices were made in normal mode.
         </div>
         <view-deck-flat
           v-if="view === 'flat'"

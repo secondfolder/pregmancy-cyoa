@@ -31,10 +31,12 @@
             Coins Spent: {{ spent }}
           </span>
         </div>
-        <label>
-          Random/Hell Mode (no budget):
-          <input type="checkbox" v-model="$root.noBudgetMode">
-        </label>
+        <div>
+          <label>
+            Random/Hell Mode (no budget):
+            <input type="checkbox" v-model="$root.noBudgetMode">
+          </label>
+        </div>
       </div>
       <div v-if="$root.deckDataModified" >
         <button

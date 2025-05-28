@@ -1,39 +1,41 @@
 <template>
-  <div>
+  <div :class="['group', 'id-'+groupData.id]">
     <section
       v-if="groupData.title"
       :class="['groupHeader', 'level'+level]"
     >
-      <span class="title">{{ groupData.title }}</span>
-      <p class="deckInfo">
-        <a
-          v-if="groupData.author && groupData.authorLink"
-          :href="groupData.authorLink"
-          target="_blank"
-          v-text="'By ' + groupData.author"
-        />
-        <span v-else-if="groupData.author">
-          By {{ groupData.author }}
-        </span>
-        <span v-if="groupData.author && groupData.version">
-          -
-        </span>
-        <span v-if="groupData.version">
-          v{{ groupData.version }}
-        </span>
-      </p>
-      <p
-        v-if="selectionRequirementsMsg"
-        :class="['selectionRequirements', {selectionRequirementsMet}]"
-        v-html="selectionRequirementsMsg"
-      ></p>
-      <div v-if="groupData.img" class="image">
-        <img :src="this.getAssetUrl(groupData.img)">
+      <div class="title">{{ groupData.title }}</div>
+      <div class="content">
+        <p class="deckInfo">
+          <a
+            v-if="groupData.author && groupData.authorLink"
+            :href="groupData.authorLink"
+            target="_blank"
+            v-text="'By ' + groupData.author"
+          />
+          <span v-else-if="groupData.author">
+            By {{ groupData.author }}
+          </span>
+          <span v-if="groupData.author && groupData.version">
+            -
+          </span>
+          <span v-if="groupData.version">
+            v{{ groupData.version }}
+          </span>
+        </p>
+        <p
+          v-if="selectionRequirementsMsg"
+          :class="['selectionRequirements', {selectionRequirementsMet}]"
+          v-html="selectionRequirementsMsg"
+        ></p>
+        <div v-if="groupData.img" class="image">
+          <img :src="this.getAssetUrl(groupData.img)">
+        </div>
+        <a v-if="groupData.imgSource" class="imgSource" :href="groupData.imgSource" @click.stop target="_blank">
+          Image Source
+        </a>
+        <p class="description" v-if="groupData.description" v-html="groupData.description"></p>
       </div>
-      <a v-if="groupData.imgSource" class="imgSource" :href="groupData.imgSource" @click.stop target="_blank">
-        Image Source
-      </a>
-      <p class="description" v-if="groupData.description" v-html="groupData.description"></p>
     </section>
     <ul class="choice-group">
       <li
@@ -117,17 +119,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 2rem;
   }
   li {
     list-style-type: none;
-    margin: 30px;
     max-width: 100%;
   }
   li.choiceGroup {
     flex: 0 1 auto;
   }
   li.choice {
-    flex: 0 1 20em;
+    flex: 0 1 auto;
   }
 
   @media (max-width: 25em) {
@@ -141,7 +143,7 @@
 
   .groupHeader {
     max-width: 40em;
-    margin: auto;
+    margin: 2rem auto;
   }
   .groupHeader.level1 {
     padding-left: 0;
@@ -164,6 +166,17 @@
   .title {
     font-weight: bold;
     display: inline-block;
+    padding: 0.7rem 0.5rem;
+  }
+  .content {
+    padding: 0.8rem 1.2rem;
+  }
+  .title, .content {
+    width: 100%;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: #0000002f;
+    box-sizing: border-box;
   }
   .level1 .title {
     font-size: 6em;
@@ -193,7 +206,7 @@
   }
   .selectionRequirements {
     font-weight: bold;
-    color: #ff6200;
+    color: #973a00;
   }
   .selectionRequirementsMet {
     color: unset;

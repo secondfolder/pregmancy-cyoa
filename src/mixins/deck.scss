@@ -8,7 +8,7 @@ main {
 footer {
   position: fixed;
   bottom: 0;
-  background-color: #d6e3ea;
+  background-color: #c2c2c2;
   left: 0;
   right: 0;
   display: flex;
@@ -20,7 +20,6 @@ footer {
 }
 footer div > * {
   margin: 0.5em;
-  padding-top: 0.2em;
 }
 footer div > span {
   display: inline-block;

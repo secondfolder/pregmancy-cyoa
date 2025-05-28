@@ -105,7 +105,7 @@
 
 <style scoped lang="scss">
   .choiceGroupFlatView.top {
-    background-color: #dbecf9;
+    background-color: #00000038;
     padding: 2em;
   }
   ul {
@@ -142,7 +142,7 @@
   }
   .maxSelectable, .minSelectable, .price, span.qty {
     font-style: italic;
-    color: rgb(128, 128, 128);
+    color: rgb(70, 70, 70);
   }
   .price.gain::before {
     content: 'Gain:';
