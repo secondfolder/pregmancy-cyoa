@@ -22,7 +22,8 @@ new Vue({
     return {
       deckData: this.loadDraft() || this.getDeckFromSource(),
       deckDataModified: !!this.loadDraft(),
-      selectedIds: []
+      selectedIds: [],
+      noBudgetMode: false
     }
   },
   methods: {

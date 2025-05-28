@@ -16,47 +16,58 @@
         @selection-changed="setSelection"
       />
     </main>
-    <footer :class="{overBudget: remaining < 0}">
+    <footer :class="{overBudget: !$root.noBudgetMode && remaining < 0}">
       <div>
-        <span class="remaining">
-          Remaining Points: {{ remaining }}
-        </span>
-        <span class="budget">
-          Budget: {{this.deckData.budget}}
-        </span>
+        <div v-if="!$root.noBudgetMode">
+          <span class="remaining">
+            Remaining Coins: {{ remaining }}
+          </span>
+          <span class="budget">
+            Budget: {{this.deckData.budget}}
+          </span>
+        </div>
+        <div v-else>
+          <span>
+            Coins Spent: {{ spent }}
+          </span>
+        </div>
+        <label>
+          Random/Hell Mode (no budget):
+          <input type="checkbox" v-model="$root.noBudgetMode">
+        </label>
       </div>
       <div v-if="$root.deckDataModified" >
-        <button 
+        <button
           @click="$root.discardDraft"
           class="danger"
         >
           Discard Changes
         </button>
-        <button 
+        <button
           @click="$router.push({name: 'Source'})"
           class="success"
         >
           Save Unsaved Changes
         </button>
-        <button 
+        <button
           @click="$router.push({name: 'Editor'})"
         >
           Continue Editing
         </button>
       </div>
       <div>
-        <button 
+        <button
           @click="toggleView"
           v-text="(this.view === 'card' ? 'Flat' : 'Card') + ' View'"
         />
         <button
-          :disabled="!!changeRequiredMsg" 
+          :disabled="!!changeRequiredMsg"
           @click="confirmChoices"
           v-text="changeRequiredMsg ? changeRequiredMsg : 'Confirm Choices'"
         />
       </div>
     </footer>
-  </div>  
+  </div>
 </template>
 
 <script>
@@ -97,7 +108,7 @@ export default {
       if (this.groupsNeedingMoreSelections.length > 0) {
         msgs.push('More Selections Required')
       }
-      if (this.remaining < 0) {
+      if (!this.$root.noBudgetMode && this.remaining < 0) {
         msgs.push('Over Budget')
       }
       return msgs.length > 0 ? msgs.join(' & ') : null
@@ -121,7 +132,7 @@ export default {
 <style scoped lang="scss">
   @import '../mixins/deck.scss';
   @import '../mixins/ui.scss';
-  
+
   /* Custom CSS */
   /* ... */
 </style>

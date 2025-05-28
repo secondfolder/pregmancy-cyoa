@@ -2,10 +2,13 @@
   <div id="page" :class="{hideNotSelected}">
     <main>
       <div v-if="selected.length === 0">
-        Nothing selected 
+        Nothing selected
       </div>
       <div v-else>
-        <div class="share-summary">
+        <div v-if="this.$root.noBudgetMode" class="share-summary">
+          These choices were made in random or hard mode.
+        </div>
+        <div v-else class="share-summary">
           The choices have been made.
         </div>
         <view-deck-flat
@@ -23,7 +26,7 @@
       </div>
       <modal-box v-if="showShareDetails" @close="showShareDetails = false">
         <h3 slot="header">Share Details</h3>
-        <div slot="body"> 
+        <div slot="body">
           <button type="button" @click="copyUrl">Copy Link</button>
           <div class="instructions">
             (or if the button doesn't work, select and copy the below text)
@@ -50,7 +53,7 @@
         </button>
       </div>
     </footer>
-  </div>  
+  </div>
 </template>
 
 <script>
@@ -83,6 +86,7 @@ export default {
   methods: {
     toggleHideNotSelected () {
       this.hideNotSelected = !this.hideNotSelected
+      console.log(this.$root)
     },
     toggleView () {
       this.view = this.view === 'card' ? 'flat' : 'card'
@@ -118,7 +122,7 @@ export default {
   .modal-box .instructions {
     margin: 1em 0 0;
   }
-  
+
   /* Custom CSS */
   /* ... */
 </style>

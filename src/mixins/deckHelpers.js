@@ -49,20 +49,23 @@ export default {
       var choiceIdSize = this.metaDeckData.hashBytesPerChoice
 
       // create binary buffer
-      var hash = new ArrayBuffer(1 + (this.selected.length * choiceIdSize))
+      var hash = new ArrayBuffer(2 + (this.selected.length * choiceIdSize))
 
       // first byte of buffer = number of bytes to make choice ID
       new Uint8Array(hash)[0] = choiceIdSize
+
+      // second byte of buffer = no budget mode or not
+      new Uint8Array(hash)[1] = this.$root.noBudgetMode ? 1 : 0
 
       // create array using the rest of the space in the buffer
       // element size depends on the number of bytes needed to represent choice ID
       var selectedChoiceIds
       if (choiceIdSize === 1) {
-        selectedChoiceIds = new Uint8Array(hash, 1)
+        selectedChoiceIds = new Uint8Array(hash, 2)
       } else if (choiceIdSize === 2) {
-        selectedChoiceIds = new Uint16Array(hash, 1)
+        selectedChoiceIds = new Uint16Array(hash, 2)
       } else if (choiceIdSize === 3) {
-        selectedChoiceIds = new Uint32Array(hash, 1)
+        selectedChoiceIds = new Uint32Array(hash, 2)
       } else {
         throw new Error('Could not create array from buffer')
       }
@@ -80,13 +83,14 @@ export default {
       // then create a new array from remaining bytes of that type size
       var typedArray = Uint8Array.from(atob(hash), c => c.charCodeAt(0))
       var choiceIdSize = typedArray[0]
+      this.$root.noBudgetMode = Boolean(typedArray[1])
       var selectedChoiceIds
       if (choiceIdSize === 1) {
-        selectedChoiceIds = new Uint8Array(typedArray.buffer, 1)
+        selectedChoiceIds = new Uint8Array(typedArray.buffer, 2)
       } else if (choiceIdSize === 2) {
-        selectedChoiceIds = new Uint16Array(typedArray.buffer, 1)
+        selectedChoiceIds = new Uint16Array(typedArray.buffer, 2)
       } else if (choiceIdSize === 3) {
-        selectedChoiceIds = new Uint32Array(typedArray.buffer, 1)
+        selectedChoiceIds = new Uint32Array(typedArray.buffer, 2)
       }
       this.$root.selectedIds = Array.from(selectedChoiceIds)
     },
@@ -139,8 +143,7 @@ export default {
       return JSON.stringify(deckDataCopy, keys, 2)
     },
     getAssetUrl (filename) {
-      var cdnEntry = glitchAssets && glitchAssets.find(entry => entry.name === filename)
-      return cdnEntry ? cdnEntry.url : '/assets/' + filename
+      return '/' + filename
     }
   },
   computed: {

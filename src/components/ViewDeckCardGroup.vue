@@ -27,13 +27,13 @@
         :class="['selectionRequirements', {selectionRequirementsMet}]"
         v-html="selectionRequirementsMsg"
       ></p>
-      <p class="description" v-if="groupData.description" v-html="groupData.description"></p>
       <div v-if="groupData.img" class="image">
         <img :src="this.getAssetUrl(groupData.img)">
       </div>
       <a v-if="groupData.imgSource" class="imgSource" :href="groupData.imgSource" @click.stop target="_blank">
         Image Source
       </a>
+      <p class="description" v-if="groupData.description" v-html="groupData.description"></p>
     </section>
     <ul class="choice-group">
       <li

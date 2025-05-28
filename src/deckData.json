@@ -1,10 +1,10 @@
 {
   "title": "Pregmancy",
   "id": 4,
-  "version": "1.0",
-  "author": "Callum Gare",
+  "version": "",
+  "author": "",
   "authorLink": "https://github.com/callumgare/",
-  "description": "Hiya friend! I'm the pregofairy, and I've heard your desires for a new life! If you choose, I can craft a new Iife and a new body for you using the magic art of Preqmancy! I'll also teach you some Pregmancy of your own, so you can be a Preqmancer yourself! How cool is that! If you want to go through with this, I'll give you some coins you can use to set up your new life! If you want to pass, | guess that’s fine too. I'll Just take my super unique and awesome opportunity elsewhere... Sniff sniff.\n<strong>Normal Mode:</strong> 10 Coins, take as many boons and drawbacks as you like.\n<strong>Random Mode:</strong> Roll for everything. Roll for your Babymaker until you have at least 1 option. For every boon you take, also take a drawback!\n<strong>Hell Mode:</strong> Roll for everything, roll for 2 Babymakers, 4 boons and 7 drawbacks.",
+  "description": "<p>Hiya friend! I'm the pregofairy, and I've heard your desires for a new life! If you choose, I can craft a new Iife and a new body for you using the magic art of Preqmancy! I'll also teach you some Pregmancy of your own, so you can be a Preqmancer yourself! How cool is that! If you want to go through with this, I'll give you some coins you can use to set up your new life! If you want to pass, | guess that’s fine too. I'll Just take my super unique and awesome opportunity elsewhere... Sniff sniff.</p><p><strong>Normal Mode:</strong> 10 Coins, take as many boons and drawbacks as you like.</p><p><strong>Random Mode:</strong> Roll for everything. Roll for your Babymaker until you have at least 1 option. For every boon you take, also take a drawback!</p><p><strong>Hell Mode:</strong> Roll for everything, roll for 2 Babymakers, 4 boons and 7 drawbacks.</p>",
   "img": "cover.jpg",
   "imgSource": "",
   "budget": 10,
@@ -22,7 +22,7 @@
           "description": "The default, and with good reason! Most mothers, and practitioners of Preqmancy, are feminine in appearance. It's just natural for us to take on a mothering role.",
           "img": "body_feminine.jpg",
           "maxSelectable": 1,
-          "cost": 1
+          "cost": 0
         },
         {
           "title": "Androgynous",
@@ -30,7 +30,7 @@
           "description": "A nice middle ground. With the right clothes and makeup you could pass for male or female.",
           "img": "body_androgynous.jpg",
           "maxSelectable": 1,
-          "cost": 1
+          "cost": 0
         },
         {
           "title": "Masculine",
@@ -38,7 +38,7 @@
           "description": "Really? You wanna be a guy AND learn Pregmancy? Hey, not gonna stop you, more power to ya friend.",
           "img": "body_masculine.jpg",
           "maxSelectable": 1,
-          "cost": 1
+          "cost": 0
         }
       ]
     },
@@ -55,7 +55,7 @@
           "description": "A simple flat chest. Good if you're going for a male bodytype, but baad for just about everything else if you ask me!",
           "img": "breasts_flat.jpg",
           "maxSelectable": 1,
-          "cost": 1
+          "cost": 0
         },
         {
           "title": "Small",
@@ -63,7 +63,7 @@
           "description": "Who says small chests are bad? I'll fight ‘em! Small means they're nice and sensitive, and anything more than a handful is a waste anyway. No, I'm not biased.",
           "img": "breasts_small.jpg",
           "maxSelectable": 1,
-          "cost": 1
+          "cost": 0
         },
         {
           "title": "Medium",
@@ -71,7 +71,7 @@
           "description": "A decent size, the majority of people fail slightly below or above this size, believe it or not you won't be suffering any back problems with these either.",
           "img": "breasts_medium.jpg",
           "maxSelectable": 1,
-          "cost": 1
+          "cost": 0
         },
         {
           "title": "Large",
@@ -96,6 +96,7 @@
       "id": 11,
       "maxSelectable": 1,
       "minSelectable": 1,
+      "description": "Mm yes, now this is one of my favorite parts. Oh who am I kidding, they're all my favorite parts! But every well respected Pregmancer <strong>needs</strong> a good set of hips. They aren't called childbearing hips for nothing. Choose only one size.",
       "contains": [
         {
           "title": "Flat",
@@ -103,7 +104,7 @@
           "description": "I‘m not mad, I'm just disappointed. You're bonier then Skeletor! No, no, | shouldn't body shame. I'm sorry. But you <strong>are</strong> going to have some problems giving birth with those hips.",
           "img": "butt_flat.jpg",
           "maxSelectable": 1,
-          "cost": 1
+          "cost": 0
         },
         {
           "title": "Cute",
@@ -111,7 +112,7 @@
           "description": "Okay, now this isn't bad at all! A nice butt, decent hips, and excellent thighs, the full package. You could do worse.",
           "img": "butt_cute.jpg",
           "maxSelectable": 1,
-          "cost": 1
+          "cost": 0
         },
         {
           "title": "Thick",
@@ -119,7 +120,7 @@
           "description": "Okay, now you're getting somewhere. Wide hips, a nice round bubble butt and the sweetest of thighs. I could get sandwiched in between here for days, but I won't, because I have shit to do.",
           "img": "butt_thick.jpg",
           "maxSelectable": 1,
-          "cost": 1
+          "cost": 0
         },
         {
           "title": "Thicc",
@@ -143,6 +144,7 @@
       "title": "Babymaker",
       "id": 17,
       "description": "Good, great, fantastic, wonderful! Now that that’s done, let's get down to the real meat of Preqmancy. Baby makin’. Let's face It, you're probably going to get knocked up at some point, that’s the whole point of learning Preqmancy! But how, is the question. Select as many options as you'd like, but you must leave this section with at least one womb!",
+      "minSelectable": 1,
       "contains": [
         {
           "title": "Anal Womb",
@@ -155,10 +157,10 @@
         {
           "title": "Normal Womb",
           "id": 20,
-          "description": "You've got a good old fashioned Vagina and womb. It's the standard, but for good reason! You can actually take this babymaker multiple times.\nEach time gives you a separate, fertile womb, each of which can be pregnant (or not) with different children!",
+          "description": "You've got a good old fashioned Vagina and womb. It's the standard, but for good reason! You can actually take this babymaker multiple times. Each time gives you a separate, fertile womb, each of which can be pregnant (or not) with different children!",
           "img": "babymaker_normal-womb.jpg",
           "maxSelectable": 1,
-          "cost": 1
+          "cost": 0
         },
         {
           "title": "Odd Pregnancy",
@@ -189,7 +191,7 @@
           "description": "<strong>You receive this for free.</strong> Yep, with all the other things you can do here, maybe you forgot that the primary purpose of getting pregnant is to have babies!",
           "img": "pregnancy-type_babies.jpg",
           "maxSelectable": 1,
-          "cost": 1
+          "cost": 0
         },
         {
           "title": "Beasts",
@@ -221,7 +223,7 @@
           "description": "You've heard of the goose that laid the golden egg? Yep, that’s you now sweetie! Instead of birthing a child, you'll produce a solid gold egg worth about $50,000 American. It's not a massive haul, factoring in the 9 months that go into it, but it's more than most people see!",
           "img": "pregnancy-type_money.jpg",
           "maxSelectable": 1,
-          "cost": 1
+          "cost": 2
         },
         {
           "title": "Parasites",
@@ -229,7 +231,7 @@
           "description": "You birth a breed of parasites that will immediately seek out the closest un-infested vaginas and worm their way Inside (an intensely pleasurable experience, trust me). Anyone with a Parasite in them incredibly receptive to your words. Not to the point of mind control, but they'll consider you good friends and take any advice you give them to heart.",
           "img": "pregnancy-type_parasites.jpg",
           "maxSelectable": 1,
-          "cost": 1
+          "cost": 2
         },
         {
           "title": "Time",
@@ -250,28 +252,271 @@
       ]
     },
     {
-      "title": "New Group",
+      "title": "Boons",
       "id": 27,
       "contains": [
         {
-          "title": "New Choice",
+          "title": "Babies on the Brain",
           "id": 35,
-          "maxSelectable": 1
+          "description": "Your intelligence increases in proportion to how pregnant you are. During your first trimester your IQ shoots up by about 10 points. In the second it goes up about an additional 15 points, and during the third trimester it goes up an additional 20 points. During this time you find it much easier to learn languages and skills such as various sciences, art, writing, programming, etc. When you give birth, your intelligence will fade over the course of the next day. ",
+          "maxSelectable": 1,
+          "cost": 2,
+          "img": "boons_babies-on-the-brain.jpg"
         },
         {
-          "title": "New Choice",
+          "title": "Broodmother",
           "id": 36,
-          "maxSelectable": 1
+          "description": "Your chance of conceiving multiple children has spiked considerably. You now have about a 60% chance of getting twins, and a 10% chance of having triplets or more. You can turn this effect on or off any time, just in case you really wanted your next kid to be a single, for whatever reason.",
+          "maxSelectable": 1,
+          "cost": 1,
+          "img": "boons_broodmother.jpg"
         },
         {
-          "title": "New Choice",
+          "title": "Buttslut",
           "id": 34,
-          "maxSelectable": 1
+          "description": "Your asshole basically acts as a second vagina. You can easily orgasm just from anal stimulation alone, and your ass will naturally produce lube just like your vagina would. This is practically mandatory with an Anal Womb. ",
+          "maxSelectable": 1,
+          "cost": 1,
+          "img": "boons_buttslut.jpg"
         },
         {
-          "title": "New Choice",
+          "title": "Cum Shower",
           "id": 31,
-          "maxSelectable": 1
+          "description": "Did you know the average man only ejaculates about a teaspoon per fuck session? We gotta pump those numbers up, those are rookie numbers! Anyone who has sex with you will pump those numbers up. While fucking you (and for about a week aftenvard), that person's average ejaculation will be about 1 cup. Mmm, don't mind me, I'm just imagining bathing in that. If you have a <strong>Swingin' Dick</strong>, this also applies to you! Yaaay!",
+          "maxSelectable": 1,
+          "cost": 1,
+          "img": "boons_cum-shower.jpg"
+        },
+        {
+          "title": "Dommy Mommy",
+          "id": 28,
+          "description": "While you're pregnant you're much more dominant than usual. Anything that might compel you to be submissive is immediately broken once you become pregnant and you'll strive to take on a strong mothering role with all of your sexual partners. <strong>Incompatible with Subby Bunny.</strong> ",
+          "maxSelectable": 1,
+          "cost": 1,
+          "img": "boons_dommy-mommy.jpg"
+        },
+        {
+          "title": "Double Down",
+          "id": 37,
+          "description": "You have a second set of breasts beneath your original of the same size (or optionally slightly smaller). You can take this multiple times, but it's not my fault if you become a boobapede! ",
+          "maxSelectable": 1,
+          "cost": 1,
+          "img": "boons_double-down.jpg"
+        },
+        {
+          "title": "Dripping",
+          "id": 38,
+          "description": "You are always soaking wet, even if you're not aroused. Lubrication will be sliding down your legs throughout the day, and any panties you wear will be drenched within the hour. If you have <strong>Buttslut</strong>, this also applies to your anal lubrication. Good news, is with all that lube you'll be able to take bigger things up there, if that's what you want. ",
+          "maxSelectable": 1,
+          "cost": 1,
+          "img": "boons_dripping.jpg"
+        },
+        {
+          "title": "Easy Pregnancy",
+          "id": 39,
+          "description": "I heartily recommend this one. Your pregnancies will progress much easier. You don't get morning sickness, you don't get weird swelling or a bad back, you'll feel basically how you do normally, just with a big of pregnant belly! Oh, but I can't do anything about the whole food cravings thing. For some reason that's hardwired in. ",
+          "maxSelectable": 1,
+          "cost": 0,
+          "img": "boons_easy-pregnancy.jpg"
+        },
+        {
+          "title": "Fertility Goddess",
+          "id": 40,
+          "description": "While you're pregnant, people can't help but worship you. They might not know exactly why, but everyone you meet will be courteous, kind, and maybe a little flirtatious. You could quickly amass followers on any social media platform simply by posting pregnant selfies. Though if you interact with these people while you're not pregnant, there's a good chance they'll go back to being indifferent. ",
+          "maxSelectable": 1,
+          "cost": 1,
+          "img": "boons_fertility-goddess.jpg"
+        },
+        {
+          "title": "Fuckable Nipples",
+          "id": 41,
+          "description": "Your nipples can now be penetrated. Choose now whether your nipples look like vaginas, mouths, or just normal. You can't get pregnant through nipple fucking (yet), but it otherwise feels like getting fucked in the pussy. ",
+          "maxSelectable": 1,
+          "cost": 1,
+          "img": "boons_fuckable-nipples.jpg"
+        },
+        {
+          "title": "Furry",
+          "id": 42,
+          "description": "Yep, you're an honest to goodness furry now. I'm not going to judge you, I've been doing this for years. You can be a furry of any animal type, chosen right now. Your genitalia can also morph to match that chosen furry species, if you'd like. People will find this odd, but they won't know exactly why. Expect them to blame your sense of fashion. ",
+          "maxSelectable": 1,
+          "cost": 1,
+          "img": "boons_furry.jpg"
+        },
+        {
+          "title": "Hyper Fertility",
+          "id": 43,
+          "description": "Your fertility levels... this can't be... it's over 9000! I've never seen fertility so high! Just about any sex with anyone, even women or infertile men, will result in you getting pregnant! Only the strongest of curses could possibly defeat your Fertility, and certainly not anything I could provide! You might even find yourself ovulating while you're already pregnant, which means, you guessed it, multiple pregnancies! <strong>Incompatible with Low Fertility.</strong> ",
+          "maxSelectable": 1,
+          "cost": 1,
+          "img": "boons_hyper-fertility.jpg"
+        },
+        {
+          "title": "Impervious Belly",
+          "id": 44,
+          "description": "Your toughness increases in proportion to how pregnant you are. During the first trimester you're able to shrug off anything that would normally bruise you (this is a good time to indulge in those spanking fetishes). During the second you're practically immune to blunt damage altogether, and very resistant to knives. During the third, you're all but bulletproof. When you give birth, your toughness will fade over the course of the next day. ",
+          "maxSelectable": 1,
+          "cost": 2,
+          "img": "boons_impervious-belly.jpg"
+        },
+        {
+          "title": "Maternal Strength",
+          "id": 45,
+          "description": "Your strength increases in proportion to how pregnant you are. In your first trimester, you're about 50% stronger. In the second, you're 100% stronger. In the third, you're 200% stronger. When you give birth, your strength will fade over the course of the next day. ",
+          "maxSelectable": 1,
+          "cost": 2,
+          "img": "boons_maternal-strength.jpg"
+        },
+        {
+          "title": "Milk Machine",
+          "id": 46,
+          "description": "So you're probably aware most women lactate while they're pregnant and for a while afterwards. You, on the other hand, will lactate all the time. It's influenced not only by your pregnancy, but also by your arousal level. Horny and eight months pregnant with twins? You'll practically be a prize-winning heifer! Not only will you produce milk like crazy, but it is incredibly tasty, nutritious, and even acts as a mild aphrodisiac in adults.",
+          "maxSelectable": 1,
+          "cost": 1,
+          "img": "boons_milk-machine.jpg"
+        },
+        {
+          "title": "Oral Fixation",
+          "id": 47,
+          "description": "For most women, oral sex is a psychological thing. Chance are they either love the submission of it, or they love the control of it. There really are no pleasure receptors in the mouth. Not so for you. Your lips, tongue and throat will be as sensitive as a pussy while you're aroused, meaning you could easily cum from giving a blowjob. Win-win, right? ",
+          "maxSelectable": 1,
+          "cost": 1,
+          "img": "boons_oral-fixation.jpg"
+        },
+        {
+          "title": "Perky",
+          "id": 48,
+          "description": "Your breasts remain perky at all times, and will resist sagging. Super nice if you have larger breasts! As a small side effect you tend to be a little more cheerful than normal. Odd.",
+          "maxSelectable": 1,
+          "cost": 1,
+          "img": "boons_perky.jpg"
+        },
+        {
+          "title": "Short Pregnancy",
+          "id": 49,
+          "description": "Your pregnancies take about half as long to complete. This means each trimester is only about one and a half months! This is amazing if you want to pop out babies (or Pregmancy effects) like crazy. Whenever you get pregnant you can choose to apply this boon or not so you can still have the full pregnancy experience if you want. Incompatible with Extended Pregnancy.",
+          "img": "boons_short-pregnancy.jpg",
+          "maxSelectable": 1,
+          "cost": 1
+        },
+        {
+          "title": "Stretchy",
+          "id": 51,
+          "description": "Your holes are practically made of rubber. They can take nearly any size insertion and within an hour they'll have tightened back up to normal. The larger an insertion is, the more pleasurable it will feel, but don't listen to those people who say you'll be ruined for small dicks. It ain't the size, baby, it's how you work it. Trust me, I'm a fairy.",
+          "maxSelectable": 1,
+          "cost": 1,
+          "img": "boons_stretchy.jpg"
+        },
+        {
+          "title": "Triple",
+          "id": 50,
+          "description": "You have three breasts instead of two! How curious. If you also have <strong>Double Down</strong>, every row will have three breasts! The more the merrier, I guess. ",
+          "maxSelectable": 1,
+          "cost": 1,
+          "img": "boons_triple.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Drawbacks",
+      "id": 52,
+      "description": "Drawbacks give you the listed amount of coins, rather than costing the listed amount.",
+      "contains": [
+        {
+          "title": "Addict",
+          "id": 54,
+          "description": "You are totally and helplessly addicted to something, which you must choose now. It can be buttsex, cum, human milk. or even something esoteric like humiliation, spankings, or being called \"Mommy.\" You could also choose normal things people are addicted to, but where's the fun in that? ",
+          "maxSelectable": 1,
+          "cost": -1,
+          "img": "drawbacks_addict.jpg"
+        },
+        {
+          "title": "Animal Magnetism",
+          "id": 55,
+          "description": "Animals love you. Absolutely, unconditionally. Like, love love too, you know what I'm saying. Males particularly will be in tune with your cycle and attempt to mate with you while you're not pregnant. While you are pregnant, they will be loving, even a little doting towards you. Unless you have the <strong>Beast</strong> pregnancy type, nothing can come of this. ",
+          "maxSelectable": 1,
+          "cost": -1,
+          "img": "drawbacks_animal-magnetism.jpg"
+        },
+        {
+          "title": "Cummy Cunny",
+          "id": 56,
+          "description": "<strong>Requires a vagina.</strong> Well, this is certainly an odd one, but your vagina will now produce cum instead of normal lubricant. It can't get you pregnant, but it will feel like you're walking around with a creampie pretty much all the time. Which, I mean technically, you will be. If you have <strong>Buttslut</strong>, then your butt will also produce cum. Take with <strong>Dripping</strong> for a constant, oozing creampie. ",
+          "maxSelectable": 1,
+          "cost": -1,
+          "img": "drawbacks_cummy-cunny.jpg"
+        },
+        {
+          "title": "Dependence",
+          "id": 58,
+          "description": "You simply cannot orgasm by yourself, you need the touch of another person to get you off. You can masturbate, sure, but it just won't push you over the edge no matter what you can do. Even strapping yourself into bondage on top of a fucking machine programmed to destroy your holes no matter what you do for hours on end won't do it. Trust me on that one. ",
+          "maxSelectable": 1,
+          "cost": -1,
+          "img": "drawbacks_dependence.jpg"
+        },
+        {
+          "title": "Dirty Girl",
+          "id": 53,
+          "description": "No matter what, you just can't bring yourself to wipe away cum, sexual fluids, or grime from your body, unless you're in the shower. If you're a bit of a slut, you'll probably be walking around town with cum plastered on your face and running down your legs. ",
+          "maxSelectable": 1,
+          "cost": -1,
+          "img": "drawbacks_dirty-girl.jpg"
+        },
+        {
+          "title": "Extended Pregnancy",
+          "id": 57,
+          "description": "Your pregnancies take twice as long to complete. This means each trimester lasts for 6 whole months. This is good if you want to be pregnant for a long time, but not so good if you want to actually give birth and reap the rewards of your Pregmancy! <strong>Incompatible with Short Pregnancy.</strong>",
+          "maxSelectable": 1,
+          "cost": -1,
+          "img": "drawbacks_extended-pregnancy.jpg"
+        },
+        {
+          "title": "Low Fertility",
+          "id": 59,
+          "description": "Oh wow, how unfortunate for you... your fertility is a record low for anyone I've transformed. I don't know what happened. Well, if you wanna make use of your Pregmancy, you're gonna have to get fucked a lot, and on a regular basis too... Better get to it, and don't forget to stay hydrated! <strong>Incompatible with Hyper Fertility.</strong>",
+          "maxSelectable": 1,
+          "cost": -1,
+          "img": "drawbacks_low-fertility.jpg"
+        },
+        {
+          "title": "Nudist",
+          "id": 60,
+          "description": "This is pretty simple. Whenever you completely cover up your body in public, you'll feel very uncomfortable. Like your clothes are made of sandpaper, but as long as you're either showing off your naked breasts or your crotch, you'll be right as rain. ",
+          "maxSelectable": 1,
+          "cost": -1,
+          "img": "drawbacks_nudist.jpg"
+        },
+        {
+          "title": "Plastic Princess",
+          "id": 62,
+          "description": "As your pregnancy grows, you become increasingly more... plastic-like. In the first trimester, your breasts and maybe even butt will appear to be implants. In the second trimester, you'll take on a distinctly Barbie or sex doll-like appearance. In the third, your skin will take on a plastic sheen, your joints will stiffen slightly, and your fuckable orifices will puff outwards like a sex doll. When you give birth this appearance will fade over the course of a day. ",
+          "maxSelectable": 1,
+          "cost": -2,
+          "img": "drawbacks_plastic-princess.jpg"
+        },
+        {
+          "title": "Pussy Mouth",
+          "id": 61,
+          "description": "There's no easy way to say this. Your mouth is now a pussy. Yep, that's a thing that can happen. The good news is, you can still talk, albeit with a bit of a lisp. Bad news, you have no teeth, so you can't chew any food. Back to the good news, semen is incredibly nutritious to you now. It's not a requirement, just putting it out there. <strong>Incompatible with Oral Fixation, technically speaking.</strong>",
+          "maxSelectable": 1,
+          "cost": -1,
+          "img": "drawbacks_pussy-mouth.jpg"
+        },
+        {
+          "title": "Subby Bunny",
+          "id": 63,
+          "description": "While you're pregnant you're much more submissive than usual. You'll automatically take the submissive role with any of your sexual partners, especially the partner who knocked you up. In fact, you'll be unable to even raise your voice against that partner. Good news is that taking orders makes you feel so good. <strong>Incompatible with Dommy Mommy.</strong>",
+          "maxSelectable": 1,
+          "cost": -1,
+          "img": "drawbacks_subby-bunny.jpg"
+        },
+        {
+          "title": "Total Mindfuck",
+          "id": 64,
+          "description": "Your ears are now fuckable. Yeah, you heard that right. People can stick dicks and fingers in your ears. Its not painful, in fact I'm told it feels better than being fucked, and it won't hurt your brain at all, but there are certain... side effects. Your mind is much more open while you're getting mindfucked, and anyone can take advantage of this to implant hypnotic suggestions of all sorts. On the plus side, I mentioned how good it feels, right? ",
+          "maxSelectable": 1,
+          "cost": -1,
+          "img": "drawbacks_total-mindfuck.jpg"
         }
       ]
     }
